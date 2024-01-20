@@ -25,3 +25,98 @@
 #container a {
   text-decoration: none;
 }
+
+#texto{
+  font-style: italic;
+  font-size: 25px;
+}
+
+#titulo-pagina{
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 9%;
+  margin-bottom: 1.5%;
+  font-style: italic;
+}
+
+.tarjeta{
+  text-align: left;
+  background-color: black;
+  color: white;
+  border: solid 1px white;
+  border-radius: 10px;
+}
+
+.imagen-tarjeta{
+  height: 100%;
+  width: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.tarjeta:hover {
+  background-color: #198754;
+  transition: background-color 0.5s;
+}
+
+.tarjeta:hover .boton-ver-mas .imagen-tarjeta{
+  transition: background-color 0.5s;
+  color: black;
+}
+
+.titulo{
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.subtitulo{
+  text-align: left;
+}
+
+.boton-ver-mas{
+  text-align: left;
+  color: #00d084;
+  text-decoration: none;
+  font-weight: bold;
+  align-items: flex-end;
+}
+
+.boton-ver-mas:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+  .row {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .boton-ver-mas{
+      display: none;
+  }
+
+  .tarjeta{
+      font-size: smaller;
+      display: block;
+      margin: 0 auto;
+      width: 90%;
+      height: fit-content;
+  }
+
+  #separador{
+      display: none;
+  }
+
+  .imagen-tarjeta{
+      display: none;
+  }
+}
+
+body{
+  background-color: rgb(31, 30, 30);
+  color: white;
+}

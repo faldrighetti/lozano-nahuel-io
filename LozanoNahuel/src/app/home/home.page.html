@@ -1,20 +1,159 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-toolbar>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>LozanoNahuel</ion-title>
+        <ion-buttons slot="end">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
   </div>
+  <ion-buttons slot="secondary">
+    <ion-button> Secondary </ion-button>
+  </ion-buttons>
+  <ion-buttons slot="primary">
+    <ion-button> Primary </ion-button>
+  </ion-buttons>
+  <ion-menu side="end" contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu Content</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">This is the menu content.</ion-content>
+  </ion-menu>
+</ion-toolbar>
+
+<ion-content>
+  <!--<app-banner></app-banner>-->
+
+  <ion-card >
+    <ion-card-content id="texto">
+      <p>“La educación financiera es el principal desafío de todas las personas que quieran mejorar su relación con el dinero”</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-title id="titulo-pagina">CURSOS Y SERVICIOS</ion-title>
+    </ion-card-header>
+
+    <ion-card-content id="cursos-grid">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card class="tarjeta">
+              <ion-card-header>
+                <h5 class="card-title titulo">ESTRATEGIA Y MÉTODO DE TRADING</h5>
+                <p class="card-text">Aprendé a invertir desde cero y conocé mi estrategia con CEDEARS.</p>
+              </ion-card-header>
+
+              <ion-card-content>
+                <ion-thumbnail slot="end">
+                  <img class="imagen-tarjeta" src="../../../assets/svg-iconos/strategy-svgrepo-com.svg" alt="">
+                </ion-thumbnail>
+              </ion-card-content>
+
+              <ion-button class="boton-ver-mas" fill="clear">Ver más</ion-button>
+            </ion-card>
+          </ion-col>
+
+          <ion-col>
+            <ion-card class="tarjeta">
+              <ion-card-header>
+                <h5 class="card-title titulo">ENTRENAMIENTO DE ANÁLISIS TÉCNICO</h5>
+                <p class="card-text">Dominá el trading con mis clases en vivo de AT. ¡Inscribite!</p>
+              </ion-card-header>
+
+              <ion-card-content>
+                <ion-thumbnail slot="end">
+                  <img class="imagen-tarjeta" src="../../../assets/svg-iconos/teacher-teaching-to-the-class-circular-symbol-svgrepo-com.svg" alt="">
+                </ion-thumbnail>
+              </ion-card-content>
+
+              <ion-button fill="clear" class="boton-ver-mas">Ver más</ion-button>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+    
+        <ion-row>
+          <ion-col>
+            <ion-card class="tarjeta">
+              <ion-card-header>
+                <h5 class="card-title titulo">TRADER CALL – SERVICIO DE ALERTAS</h5>
+                <p class="card-text">Enterate ahora de las oportunidades que surgen en el mercado. ¡Unite ya!</p>
+              </ion-card-header>
+              
+              <ion-card-content>
+                <ion-thumbnail slot="end">
+                  <img class="imagen-tarjeta" src="../../../assets/svg-iconos/bell-notification-svgrepo-com.svg" alt="">
+                </ion-thumbnail>
+              </ion-card-content>
+
+              <ion-button class="boton-ver-mas" fill="clear">Ver más</ion-button>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card class="tarjeta">
+              <ion-card-header>
+                <h5 class="card-title titulo">CALENDARIO DE MASTERCLASSES</h5>
+                <p class="card-text">Aprendé con las Masterclasses, especializadas e imprescindibles.</p>
+              </ion-card-header>
+              
+              <ion-card-content>
+                <ion-thumbnail slot="end">
+                  <img class="imagen-tarjeta" src="../../../assets/svg-iconos/calendar-svgrepo-com (2).svg" alt="">
+                </ion-thumbnail>
+              </ion-card-content>
+
+              <ion-button class="boton-ver-mas" fill="clear">Ver más</ion-button>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+    
+        <ion-row>
+          <ion-col>
+            <ion-card class="tarjeta">
+              <ion-card-header>
+                <h5 class="card-title titulo">CURSO GRATUITO DE ANÁLISIS TÉCNICO</h5>
+                <p class="card-text">Iniciate en el mundo bursátil gratis y con la mejor calidad.</p>
+              </ion-card-header>
+              
+              <ion-card-content>
+                <ion-thumbnail slot="end">
+                  <img class="imagen-tarjeta" src="../../../assets/svg-iconos/teacher-on-biology-class-svgrepo-com.svg" alt="">
+                </ion-thumbnail>
+              </ion-card-content>
+
+              <ion-button class="boton-ver-mas" fill="clear">Ver más</ion-button>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card class="tarjeta">
+              <ion-card-header>
+                <h5 class="card-title titulo">COMUNIDAD GRATUITA DE TRADERS</h5>
+                <p class="card-text">¡Sumate a la comunidad de traders en Telegram!</p>
+              </ion-card-header>
+              
+              <ion-card-content>
+                <ion-thumbnail slot="end">
+                  <img class="imagen-tarjeta" src="../../../assets/svg-iconos/community-svgrepo-com.svg" alt="">
+                </ion-thumbnail>
+              </ion-card-content>
+
+              <ion-button class="boton-ver-mas" fill="clear">Ver más</ion-button>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <!-- Repite la estructura similar para otras tarjetas -->
+
 </ion-content>
+
+<ion-footer>
+  <!--<app-footer></app-footer>-->
+</ion-footer>
